@@ -8,6 +8,7 @@ const ServicePage: FC = () => {
 
   return (
     <div>
+      <Aside />
       <main>
         <h1>Страница сервиса</h1>
         <div>ID пользователя: {userId}</div>

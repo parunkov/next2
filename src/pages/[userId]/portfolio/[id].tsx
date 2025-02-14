@@ -1,19 +1,23 @@
 import { FC } from 'react'
-import { useRouter } from 'next/router'
 import Aside from '@/components/Aside'
+import Breadcrumbs from '@/components/Breadcrumbs/Breadcrumbs'
 
 const PortfolioPage: FC = () => {
-  const router = useRouter()
-  const { userId, id } = router.query
+
+  const breadcrumbItems = [
+    { label: 'Специалисты', href: '/' },
+    { label: 'Darrell Steward', href: `/` },
+    { label: 'Дизайн мобильного приложения' }
+  ]
 
   return (
     <div>
-      <Aside />
-      <main>
-        <h1>Страница портфолио</h1>
-        <div>ID пользователя: {userId}</div>
-        <div>ID портфолио: {id}</div>
-      </main>
+      <div className="container">
+        <Breadcrumbs items={breadcrumbItems} />
+        <Aside />
+        <main>
+        </main>
+      </div>
     </div>
   )
 }

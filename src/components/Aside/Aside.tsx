@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import styles from './Aside.module.css'
+import styles from './Aside.module.scss'
 
 const Aside: FC = () => {
   return (

@@ -13,24 +13,24 @@
 
 .avatarWrapper {
   position: relative;
-}
 
-.avatar {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  object-fit: cover;
-}
+  .avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
 
-.onlineStatus {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 24px;
-  height: 24px;
-  background: #22c55e;
-  border-radius: 50%;
-  border: 2px solid white;
+  .onlineStatus {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    background: #22c55e;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
 }
 
 .name {
@@ -58,26 +58,26 @@
   display: flex;
   justify-content: space-between;
   text-align: center;
-}
 
-.statsItem {
-  flex: 1;
-}
+  .statsItem {
+    flex: 1;
 
-.statsValue {
-  font-size: 24px;
-  font-weight: bold;
-}
+    .statsValue {
+      font-size: 24px;
+      font-weight: bold;
 
-.statsLabel {
-  color: #666;
-  margin-top: 4px;
-}
+      .positive {
+        color: #16a34a;
+      }
 
-.positive {
-  color: #16a34a;
-}
+      .negative {
+        color: #dc2626;
+      }
+    }
 
-.negative {
-  color: #dc2626;
+    .statsLabel {
+      color: #666;
+      margin-top: 4px;
+    }
+  }
 } 
