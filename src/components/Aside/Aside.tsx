@@ -7,7 +7,7 @@ const Aside: FC = () => {
       <div className={styles.container}>
         <div className={styles.avatarWrapper}>
           <img 
-            src="/avatar.jpg" 
+            src="/images/profile-icon.svg" 
             alt="Фото профиля"
             className={styles.avatar}
           />

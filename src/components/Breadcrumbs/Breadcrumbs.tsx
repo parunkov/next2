@@ -14,6 +14,13 @@ interface BreadcrumbsProps {
 const Breadcrumbs: FC<BreadcrumbsProps> = ({ items }) => {
   return (
     <nav className={styles.breadcrumbs}>
+      <button
+        onClick={() => window.history.back()}
+        className={styles.backButton}
+        type="button"
+      >
+        ← Назад
+      </button>
       <ul className={styles.list}>
         {items.map((item, index) => (
           <li key={index} className={styles.item}>

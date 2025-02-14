@@ -1,19 +1,26 @@
 import { FC } from 'react'
-import { useRouter } from 'next/router'
 import Aside from '@/components/Aside'
+import MobileHeader from '@/components/MobileHeader/MobileHeader'
+import Breadcrumbs from '@/components/Breadcrumbs/Breadcrumbs'
 
 const ServicePage: FC = () => {
-  const router = useRouter()
-  const { userId, serviceId } = router.query
+
+  const breadcrumbItems = [
+    { label: 'Специалисты', href: '/' },
+    { label: 'Darrell Steward', href: `/` },
+    { label: 'Дизайн мобильного приложения' }
+  ]
 
   return (
     <div>
-      <Aside />
-      <main>
-        <h1>Страница сервиса</h1>
-        <div>ID пользователя: {userId}</div>
-        <div>ID сервиса: {serviceId}</div>
-      </main>
+      <MobileHeader />
+      <div className="container">
+        <Breadcrumbs items={breadcrumbItems} />
+        <div className="content">
+          <Aside />
+          <div className="portfolio-content"></div>
+        </div>
+      </div>
     </div>
   )
 }
