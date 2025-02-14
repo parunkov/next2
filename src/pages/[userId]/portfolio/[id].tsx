@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { useRouter } from 'next/router'
+import Aside from '@/components/Aside'
 
 const PortfolioPage: FC = () => {
   const router = useRouter()
@@ -7,9 +8,12 @@ const PortfolioPage: FC = () => {
 
   return (
     <div>
-      <h1>Страница портфолио</h1>
-      <div>ID пользователя: {userId}</div>
-      <div>ID портфолио: {id}</div>
+      <Aside />
+      <main>
+        <h1>Страница портфолио</h1>
+        <div>ID пользователя: {userId}</div>
+        <div>ID портфолио: {id}</div>
+      </main>
     </div>
   )
 }
