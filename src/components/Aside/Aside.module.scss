@@ -112,11 +112,16 @@
 }
 
 .prof {
+  display: none;
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 500;
   line-height: 120%;
   text-align: center;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 }
 
 .name {

@@ -11,5 +11,116 @@
   
   @media (max-width: 768px) {
     flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.serviceContent {
+  padding: 24px;
+  border: 1px solid #0000000d;
+  border-radius: 24px;
+  background: #FFFFFF;
+  flex: 1;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+    border-radius: 16px;
+  }
+}
+
+.serviceHeader {
+  display: flex;
+  margin-bottom: 8px;
+
+  h1 {
+    flex: auto;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 130%;
+    color: #262626;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  .actions {
+    display: flex;
+    gap: 8px;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  button {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+  }
+}
+
+.serviceTags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+
+  @media (max-width: 768px) {
+    gap: 4px;
+  }
+
+  .tag {
+    display: flex;
+    align-items: center;
+    padding: 4px 6px;
+    color: #4B5675;
+    font-size: 10px;
+    line-height: 120%;
+    border-radius: 6px;
+    background: #F1F1F4;
+
+    img {
+      margin-right: 5px;
+      transform: translateY(1px);
+    }
+
+    &.urgent {
+      background: #FFEEF3;
+      color: #D81A48;
+    }
+
+    &.safe {
+      background: #EAFFF1;
+      color: #04B440;
+    }
+  }
+}
+
+.price {
+  color: #262626;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 130%;
+  margin: 16px 0;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    margin: 12px 0;
+  }
+}
+
+.serviceDescription {
+  padding-top: 16px;
+  color: #262626;
+  font-size: 16px;
+  line-height: 120%;
+  border-top: 1px dashed #EEEEEE;
+
+  @media (max-width: 768px) {
+    padding-top: 8px;
+    border-top: none;
+    font-size: 14px;
   }
 }
