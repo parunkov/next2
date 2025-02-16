@@ -1,4 +1,5 @@
 import { FC } from "react";
+import styles from './Portfolio.module.scss';
 import Aside from "@/components/Aside";
 import Breadcrumbs from "@/components/Breadcrumbs/Breadcrumbs";
 import MobileHeader from "@/components/MobileHeader/MobileHeader";
@@ -14,9 +15,9 @@ const PortfolioPage: FC = () => {
   return (
     <div>
       <MobileHeader />
-      <div className="container">
+      <div className={styles.container}>
         <Breadcrumbs items={breadcrumbItems} />
-        <div className="content">
+        <div className={styles.content}>
           <Aside 
             name="Darrell Steward"
             username="vladweb"
@@ -28,18 +29,18 @@ const PortfolioPage: FC = () => {
             }}
             activeOrders={4}
           />
-          <div className="portfolio-content">
-            <div className="portfolio-header">
+          <div className={styles.portfolioContent}>
+            <div className={styles.portfolioHeader}>
               <h1>Дизайн мобильного приложения</h1>
-              <div className="portfolio-tags">
-                <span className="tag urgent">Срочно</span>
-                <span className="tag safe">Безопасная сделка</span>
-                <span className="tag">ФГОС</span>
-                <span className="tag">Обучение</span>
-                <span className="tag">pdf</span>
+              <div className={styles.portfolioTags}>
+                <span className={`${styles.tag} ${styles.urgent}`}>Срочно</span>
+                <span className={`${styles.tag} ${styles.safe}`}>Безопасная сделка</span>
+                <span className={styles.tag}>ФГОС</span>
+                <span className={styles.tag}>Обучение</span>
+                <span className={styles.tag}>pdf</span>
               </div>
-              <div className="portfolio-stats">
-                <div className="stat">
+              <div className={styles.portfolioStats}>
+                <div className={styles.stat}>
                   <Image
                     src="/heart.svg"
                     alt="Likes"
@@ -49,7 +50,7 @@ const PortfolioPage: FC = () => {
                   />
                   <span>12</span>
                 </div>
-                <div className="stat">
+                <div className={styles.stat}>
                   <Image
                     src="/heart.svg"
                     alt="Likes"
@@ -62,7 +63,7 @@ const PortfolioPage: FC = () => {
               </div>
             </div>
 
-            <div className="portfolio-description">
+            <div className={styles.portfolioDescription}>
               <p>
                 Figma ipsum component variant main layer. Shadow arrange
                 subtract link prototype flatten arrow plugin line. Device
@@ -77,11 +78,11 @@ const PortfolioPage: FC = () => {
               </p>
             </div>
 
-            <div className="portfolio-image">
+            <div className={styles.portfolioImage}>
               <img
                 src="/portfolio-image.jpg"
                 alt="Дизайн мобильного приложения"
-                className="main-image"
+                className={styles.mainImage}
               />
             </div>
           </div>

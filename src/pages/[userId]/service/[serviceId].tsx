@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import styles from './Service.module.scss';
 import Aside from '@/components/Aside'
 import MobileHeader from '@/components/MobileHeader/MobileHeader'
 import Breadcrumbs from '@/components/Breadcrumbs/Breadcrumbs'
@@ -14,9 +15,9 @@ const ServicePage: FC = () => {
   return (
     <div>
       <MobileHeader />
-      <div className="container">
+      <div className={styles.container}>
         <Breadcrumbs items={breadcrumbItems} />
-        <div className="content">
+        <div className={styles.content}>
           <Aside 
             name="Darrell Steward"
             username="vladweb"
@@ -28,7 +29,7 @@ const ServicePage: FC = () => {
             }}
             activeOrders={4}
           />
-          <div className="portfolio-content"></div>
+          <div className={styles.portfolioContent}></div>
         </div>
       </div>
     </div>
