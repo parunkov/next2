@@ -3,7 +3,7 @@ import styles from "./Service.module.scss";
 import Aside from "@/components/Aside";
 import MobileHeader from "@/components/MobileHeader/MobileHeader";
 import Breadcrumbs from "@/components/Breadcrumbs/Breadcrumbs";
-import { editImg, deleteImg, falmeImg, safeImg } from "@/icons/serviceIcons";
+import { editImg, deleteImg } from "@/icons/serviceIcons";
 
 const ServicePage: FC = () => {
   const breadcrumbItems = [
@@ -23,7 +23,7 @@ const ServicePage: FC = () => {
             prof="Fullstack Web-developer"
             name="Darrell Steward"
             username="vladweb"
-            serviceTime="На сервисе 1 год"
+            serviceTime="1 год"
             totalOrders={345}
             reviews={{
               positive: 34,
@@ -32,31 +32,39 @@ const ServicePage: FC = () => {
             activeOrders={4}
           />
           <div className={styles.serviceContent}>
+            <div className={styles.serviceImage}>
+              <img
+                src="/images/des.jpg"
+                alt="Дизайн мобильного приложения"
+                className={styles.mainImage}
+              />
+            </div>
             <div className={styles.serviceHeader}>
               <h1>Разработка веб сайта</h1>
               <div className={styles.actions}>
-                <button className={styles.edit} dangerouslySetInnerHTML={{ __html: editImg }} />
-                <button className={styles.delete} dangerouslySetInnerHTML={{ __html: deleteImg }} />
+                <button
+                  className={styles.edit}
+                  dangerouslySetInnerHTML={{ __html: editImg }}
+                />
+                <button
+                  className={styles.delete}
+                  dangerouslySetInnerHTML={{ __html: deleteImg }}
+                />
               </div>
             </div>
 
-            <div className={styles.serviceTags}>
-              <span className={styles.tag}>
-                <span dangerouslySetInnerHTML={{ __html: falmeImg }} />
-                Срочный заказ
-              </span>
-              <span className={styles.tag}>
-                <span dangerouslySetInnerHTML={{ __html: safeImg }} />
-                Безопасная сделка
-              </span>
-            </div>
-
-            <div className={styles.price}>
-              100 000 ₽/проект
-            </div>
+            <div className={styles.price}>100 000 ₽/проект</div>
 
             <div className={styles.serviceDescription}>
-              Figma connection vector asset line. Thumbnail outline asset line. Thumbnail outline asset line. Prototype flatten line. Align hand connection vector effect. Selection connection clip polygon blur. Stroke variant slice team font. Lorem ipsum effect. Stroke effect align. Ellipse draft pixel.Underline asset thumbnail line share. Thumbnail outline create fill figma hand. Align align image follower vector project. Rotate flatten fill connection union device. Connection boolean group follower outline line. Lorem line hand create fill. Layer frame hand create select.
+              Figma connection vector asset line. Thumbnail outline asset line.
+              Thumbnail outline asset line. Prototype flatten line. Align hand
+              connection vector effect. Selection connection clip polygon blur.
+              Stroke variant slice team font. Lorem ipsum effect. Stroke effect
+              align. Ellipse draft pixel.Underline asset thumbnail line share.
+              Thumbnail outline create fill figma hand. Align align image
+              follower vector project. Rotate flatten fill connection union
+              device. Connection boolean group follower outline line. Lorem line
+              hand create fill. Layer frame hand create select.
             </div>
           </div>
         </div>
