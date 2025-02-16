@@ -29,10 +29,14 @@
 }
 
 .serviceImage {
+  margin-bottom: 12px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 6px;
+  }
 
   .mainImage {
     width: 100%;
-    margin-bottom: 12px;
     border-radius: 16px;
   }
 }
@@ -55,16 +59,27 @@
 
   .actions {
     display: flex;
-
-    @media (max-width: 768px) {
-      display: none;
-    }
   }
 
   button {
     background: none;
     border: none;
     cursor: pointer;
+  }
+
+  .edit,
+  .delete {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .titleBtn {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
   }
 }
 
@@ -74,11 +89,6 @@
   font-weight: 500;
   line-height: 120%;
   text-align: left;
-
-  @media (max-width: 768px) {
-    font-size: 20px;
-    margin: 12px 0;
-  }
 }
 
 .serviceDescription {
@@ -88,7 +98,7 @@
   line-height: 120%;
 
   @media (max-width: 768px) {
-    padding-top: 8px;
+    padding-top: 24px;
     border-top: none;
     font-size: 14px;
   }

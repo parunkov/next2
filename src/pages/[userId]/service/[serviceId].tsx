@@ -3,7 +3,7 @@ import styles from "./Service.module.scss";
 import Aside from "@/components/Aside";
 import MobileHeader from "@/components/MobileHeader/MobileHeader";
 import Breadcrumbs from "@/components/Breadcrumbs/Breadcrumbs";
-import { editImg, deleteImg } from "@/icons/serviceIcons";
+import { editImg, deleteImg, titleBtnImg } from "@/icons/serviceIcons";
 
 const ServicePage: FC = () => {
   const breadcrumbItems = [
@@ -50,6 +50,10 @@ const ServicePage: FC = () => {
                   className={styles.delete}
                   dangerouslySetInnerHTML={{ __html: deleteImg }}
                 />
+                <span
+                className={styles.titleBtn}
+                dangerouslySetInnerHTML={{ __html: titleBtnImg }}
+              ></span>
               </div>
             </div>
 
