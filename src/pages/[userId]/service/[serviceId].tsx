@@ -17,7 +17,17 @@ const ServicePage: FC = () => {
       <div className="container">
         <Breadcrumbs items={breadcrumbItems} />
         <div className="content">
-          <Aside />
+          <Aside 
+            name="Darrell Steward"
+            username="vladweb"
+            serviceTime="На сервисе 1 год"
+            totalOrders={345}
+            reviews={{
+              positive: 34,
+              negative: 3
+            }}
+            activeOrders={4}
+          />
           <div className="portfolio-content"></div>
         </div>
       </div>
