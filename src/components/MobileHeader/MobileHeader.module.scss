@@ -2,51 +2,20 @@
   display: none;
   align-items: center;
   justify-content: space-between;
-  padding: 16px;
+  padding: 12px 8px;
   background: #fff;
-  
+
   @media (max-width: 768px) {
     display: flex;
   }
 }
 
-.menuButton {
-  background: none;
-  border: none;
-  padding: 8px;
-  cursor: pointer;
-}
-
-.menuIcon {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background: #000;
-  position: relative;
-  
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    width: 24px;
-    height: 2px;
-    background: #000;
-    left: 0;
-  }
-  
-  &::before {
-    top: -6px;
-  }
-  
-  &::after {
-    bottom: -6px;
-  }
-}
-
 .logo {
   display: flex;
+  font-size: 0;
+  transform: translateY(-2px);
 }
 
 .profileLink {
   display: flex;
-} 
+}

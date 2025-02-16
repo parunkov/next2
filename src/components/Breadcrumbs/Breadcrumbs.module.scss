@@ -34,6 +34,10 @@
   line-height: 120%;
   letter-spacing: 0%;
   text-align: left;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 }
 
 .item {
