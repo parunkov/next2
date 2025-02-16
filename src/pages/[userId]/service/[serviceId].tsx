@@ -19,6 +19,7 @@ const ServicePage: FC = () => {
         <Breadcrumbs items={breadcrumbItems} />
         <div className={styles.content}>
           <Aside 
+            avatar="/path/to/avatar.jpg"
             name="Darrell Steward"
             username="vladweb"
             serviceTime="На сервисе 1 год"

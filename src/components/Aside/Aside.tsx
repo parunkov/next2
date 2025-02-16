@@ -11,6 +11,7 @@ interface AsideProps {
     negative: number;
   };
   activeOrders: number;
+  avatar: string;
 }
 
 const Aside: FC<AsideProps> = ({
@@ -19,21 +20,22 @@ const Aside: FC<AsideProps> = ({
   serviceTime,
   totalOrders,
   reviews,
-  activeOrders
+  activeOrders,
+  avatar
 }) => {
   return (
     <aside className={styles.aside}>
       <div className={styles.container}>
         <div className={styles.avatarWrapper}>
           <img 
-            src="/images/profile-icon.svg" 
+            src={avatar}
             alt="Фото профиля"
             className={styles.avatar}
           />
           <span className={styles.onlineStatus} />
         </div>
         
-        <h1 className={styles.name}>{name}</h1>
+        <h2 className={styles.name}>{name}</h2>
         <p className={styles.info}>@{username} / {serviceTime}</p>
         
         <span className={styles.status}>В сети</span>
