@@ -19,7 +19,7 @@ const Breadcrumbs: FC<BreadcrumbsProps> = ({ items }) => {
         className={styles.backButton}
         type="button"
       >
-        ← Назад
+        <span className={styles.backButtonText}>Вернуться назад</span>
       </button>
       <ul className={styles.list}>
         {items.map((item, index) => (

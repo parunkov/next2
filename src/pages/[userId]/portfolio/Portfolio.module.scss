@@ -1,14 +1,16 @@
 .container {
-  max-width: 1200px;
+  max-width: 1358px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 15px;
 }
 
 .content {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 24px;
-  margin-top: 24px;
+  display: flex;
+  gap: 20px;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .portfolioContent {
@@ -74,5 +76,18 @@
   .mainImage {
     width: 100%;
     border-radius: 8px;
+  }
+}
+
+.main {
+  flex: 1;
+}
+
+.aside {
+  width: 300px;
+  flex-shrink: 0;
+  
+  @media (max-width: 768px) {
+    width: 100%;
   }
 } 

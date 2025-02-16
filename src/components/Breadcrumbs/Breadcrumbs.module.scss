@@ -1,5 +1,24 @@
 .breadcrumbs {
+  display: flex;
   padding: 16px 0;
+  gap: 16px;
+}
+
+.backButton {
+  padding: 10PX 16px;
+  border: 1px solid #dfdfdf;
+  border-radius: 100px;
+  background: #ffffff;
+}
+
+.backButtonText {
+  color: #6f6f6f;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+  box-sizing: border-box;
 }
 
 .list {
@@ -8,30 +27,30 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  color: #181E2E;
+  font-size: 12px;
+  line-height: 120%;
+  text-align: left;
 }
 
 .item {
   display: flex;
   align-items: center;
-  color: #666;
+  color: #181E2E;
   font-size: 14px;
 
   .link {
-    color: #666;
+    color: #181E2E;
     text-decoration: none;
     transition: color 0.2s;
-
-    &:hover {
-      color: #000;
-    }
   }
 
   .text {
-    color: #000;
+    color: #949494;
   }
 
   .separator {
     margin: 0 8px;
-    color: #666;
+    color: #949494;
   }
-} 
+}
