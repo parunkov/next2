@@ -11,6 +11,7 @@
 
   @media (max-width: 768px) {
     flex-direction: column;
+    gap: 16px;
   }
 }
 
@@ -19,6 +20,11 @@
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 24px;
   background: #FFFFFF;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+    border-radius: 16px;
+  }
 }
 
 .portfolioHeader {
@@ -28,6 +34,26 @@
   h1 {
     flex: auto;
     font-size: 32px;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+      line-height: 130%;
+    }
+  }
+
+  .edit,
+  .delete {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .titleBtn {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
   }
 }
 
@@ -36,6 +62,10 @@
   gap: 8px;
   flex-wrap: wrap;
   margin-bottom: 5px;
+
+  @media (max-width: 768px) {
+    gap: 4px;
+  }
 
   .tag {
     display: flex;
@@ -47,6 +77,10 @@
     text-align: left;
     border-radius: 6px;
     background: #F1F1F4;
+
+    @media (max-width: 768px) {
+      padding: 3px 4px;
+    }
 
     &.urgent {
       background: #FFEEF3;
@@ -96,6 +130,12 @@
   line-height: 120%;
   text-align: left;
   border-top: 1px dashed rgb(238, 238, 238);
+
+  @media (max-width: 768px) {
+    padding-top: 8px;
+    border-top: none;
+    font-size: 14px;
+  }
 }
 
 .portfolioImage {
