@@ -23,11 +23,11 @@
 
 .portfolioHeader {
   display: flex;
+  margin-bottom: 8px;
 
   h1 {
     flex: auto;
     font-size: 32px;
-    margin-bottom: 16px;
   }
 }
 
@@ -35,18 +35,28 @@
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
-  margin-bottom: 16px;
+  margin-bottom: 5px;
 
   .tag {
-    padding: 4px 12px;
-    background: #f3f4f6;
-    border-radius: 16px;
-    font-size: 14px;
-    color: #666;
+    display: flex;
+    align-items: center;
+    padding: 4px 6px;
+    color: #4B5675;
+    font-size: 10px;
+    line-height: 120%;
+    text-align: left;
+    border-radius: 6px;
+    background: #F1F1F4;
 
     &.urgent {
-      background: #fee2e2;
-      color: #dc2626;
+      background: #FFEEF3;
+      color: #D81A48;
+    }
+
+    .falme,
+    .safeImg {
+      margin-right: 5px;
+      transform: translateY(1px);
     }
 
     &.safe {
@@ -63,35 +73,52 @@
   .stat {
     display: flex;
     align-items: center;
-    gap: 4px;
-    color: #666;
+    margin-bottom: 14px;
+    color: #484848;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: left;
+
+    .heartImg,
+    .eyeImg {
+      margin-right: 8px;
+      transform: translateY(1px);
+    }
   }
 }
 
 .portfolioDescription {
-  margin-top: 24px;
-  color: #374151;
-  line-height: 1.5;
+  padding-top: 16px;
+  margin-bottom: 12px;
+  color: #262626;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: left;
+  border-top: 1px dashed rgb(238, 238, 238);
 }
 
 .portfolioImage {
-  margin-top: 24px;
 
   .mainImage {
     width: 100%;
-    border-radius: 8px;
+    margin-bottom: 10px;
+    border-radius: 16px;
   }
 }
 
-.main {
-  flex: 1;
-}
+.like {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  color: #484848;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  text-align: left;
 
-.aside {
-  width: 300px;
-  flex-shrink: 0;
-
-  @media (max-width: 768px) {
-    width: 100%;
+  .likeImg {
+    margin-right: 12px;
+    transform: translateY(2px);
   }
 }
