@@ -19,6 +19,7 @@ const ServicePage: FC = () => {
         <div className={styles.content}>
           <Aside
             avatar="/images/avatar.png"
+            prof="Fullstack Web-developer"
             name="Darrell Steward"
             username="vladweb"
             serviceTime="1 год"
