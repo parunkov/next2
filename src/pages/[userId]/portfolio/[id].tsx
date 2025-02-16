@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styles from './Portfolio.module.scss';
+import styles from "./Portfolio.module.scss";
 import Aside from "@/components/Aside";
 import Breadcrumbs from "@/components/Breadcrumbs/Breadcrumbs";
 import MobileHeader from "@/components/MobileHeader/MobileHeader";
@@ -18,15 +18,15 @@ const PortfolioPage: FC = () => {
       <div className={styles.container}>
         <Breadcrumbs items={breadcrumbItems} />
         <div className={styles.content}>
-          <Aside 
-            avatar="/path/to/avatar.jpg"
+          <Aside
+            avatar="/images/avatar.png"
             name="Darrell Steward"
             username="vladweb"
-            serviceTime="На сервисе 1 год"
+            serviceTime="1 год"
             totalOrders={345}
             reviews={{
               positive: 34,
-              negative: 3
+              negative: 3,
             }}
             activeOrders={4}
           />
@@ -35,7 +35,9 @@ const PortfolioPage: FC = () => {
               <h1>Дизайн мобильного приложения</h1>
               <div className={styles.portfolioTags}>
                 <span className={`${styles.tag} ${styles.urgent}`}>Срочно</span>
-                <span className={`${styles.tag} ${styles.safe}`}>Безопасная сделка</span>
+                <span className={`${styles.tag} ${styles.safe}`}>
+                  Безопасная сделка
+                </span>
                 <span className={styles.tag}>ФГОС</span>
                 <span className={styles.tag}>Обучение</span>
                 <span className={styles.tag}>pdf</span>
